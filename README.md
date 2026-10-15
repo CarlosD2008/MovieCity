@@ -229,15 +229,6 @@ Estudante de Desenvolvimento de Sistemas no SENAI, interessado em desenvolviment
 </a>
 
 </div>
-
-## ⭐ Gostou do projeto?
-
-Se o MovieCity chamou sua atenção, deixe uma ⭐ no repositório e acompanhe a evolução dos meus projetos.
-
-<div align="center">
-
-### 🎬 MovieCity
-
 **Tecnologia, criatividade e cinema em uma única experiência.**
 
 *Desenvolvido com dedicação e aprendizado contínuo.*
