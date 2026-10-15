@@ -1,244 +1,116 @@
+# 🎬 MovieCity — Plataforma de Cinema de Próxima Geração
 
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=32&pause=1000&color=9DFF00&center=true&vCenter=true&width=800&lines=Bem-vindo+ao+MovieCity;Explore+o+universo+do+cinema;React+%2B+Vite+%2B+Design+Premium" alt="Animação MovieCity" />
-
-### 🍿 Sua próxima experiência cinematográfica começa aqui.
-
-Uma landing page moderna, responsiva e inspirada no universo do cinema, desenvolvida para praticar os fundamentos do React e criar uma interface visualmente impactante.
-
-<br />
-
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
-<img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-<img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/CSS3-Responsivo-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-
-<br /><br />
-
-<img src="https://komarev.com/ghpvc/?username=CarlosD2008&label=VISUALIZA%C3%87%C3%95ES&color=9DFF00&style=for-the-badge" alt="Visualizações do perfil" />
-
-</div>
+Uma experiência cinematográfica imersiva e de **altíssimo desempenho**, desenvolvida com **React 19**, **Vite 7** e **CSS3 moderno de alta fidelidade**. Projetada com estética *cyber-dark/A24*, iluminação dinâmica com reflexos de aura ambiente, sintetizador de som nativo via **Web Audio API**, persistência de dados em **LocalStorage** e zero dependências pesadas externas.
 
 ---
 
-## 🎥 Sobre o projeto
+## ⚡ Tecnologias & Arquitetura de Alto Desempenho
 
-O **MovieCity** é uma Landing Page temática de cinema, desenvolvida com React e Vite como atividade prática de Desenvolvimento de Sistemas.
+- **React 19**: Renderização ultra rápida, estado reativo com `useMemo` e `useCallback` para busca e filtros sem re-renderizações desnecessárias.
+- **Vite 7**: Ambiente de desenvolvimento instantâneo e bundling com sub-100ms de carregamento.
+- **Web Audio API**: Efeitos sonoros táteis e procedurais (clique, favoritar, nota de avaliação e abertura de modal) sintetizados dinamicamente pelo navegador, sem necessidade de carregar arquivos de áudio pesados, com controle liga/desliga de mudo.
+- **LocalStorage Persistence Engine**: Sincronização automática e persistência da *Minha Lista (Watchlist)*, notas de avaliações dos filmes e perfil de usuário.
+- **Sistema Vetorial SVG Inline Nativo**: Coleção completa de ícones em SVG puro, sem bibliotecas externas pesadas, garantindo fidelidade visual e tempo de resposta zero.
+- **CSS3 GPU-Accelerated & Glassmorphism**: Utilização de `backdrop-filter`, `clamp()` para tipografia fluida, `will-change` e transformações 3D aceleradas por hardware para 60/120 FPS estáveis.
 
-O projeto combina uma identidade visual cinematográfica com uma interface moderna, utilizando cores contrastantes, imagens de filmes, componentes reutilizáveis e adaptação para diferentes tamanhos de tela.
+---
 
-O objetivo é construir uma experiência visual agradável e aplicar conceitos fundamentais do desenvolvimento front-end.
+## ✨ Funcionalidades Principais
 
-## ✨ Funcionalidades
+1. **Billboard Cinematográfico (Hero Carousel)**:
+   - Carrossel com os principais destaques, temporizador automático (pausa ao passar o mouse) e troca instantânea de títulos.
+   - Pôster em alta resolução com iluminação de aura ambiente calculada na cor do filme.
+   - Botões de ação rápida: Assistir Trailer, Minha Lista e Detalhes do Filme.
+   - Miniaturas inferiores interativas para pré-visualização em 1 clique.
 
-- 🎬 **Interface cinematográfica:** identidade visual moderna e temática.
-- 🍿 **Catálogo de filmes:** apresentação visual dos títulos disponíveis.
-- 🧩 **Componentização:** organização da interface em componentes React.
-- 🖼️ **Imagens dos filmes:** utilização de recursos visuais no catálogo.
-- 📱 **Design responsivo:** adaptação para computadores, tablets e celulares.
-- 🎨 **Estilização personalizada:** CSS com cores, espaçamentos e efeitos visuais.
-- ⚡ **Vite:** ambiente de desenvolvimento rápido.
-- 🧭 **Navegação interativa:** elementos de interface para facilitar a exploração da página.
+2. **Player de Trailer Cinematográfico (Modo Cinema)**:
+   - Modal em tela ampla com efeito de luz ambiente traseira (*Backlight Ambient Glow*).
+   - Especificações de vídeo (4K Ultra HD, Dolby Vision, Som Espacial).
+   - Atalho de teclado `ESC` para fechamento instantâneo.
 
-> Observação: recursos como login real, reprodução de filmes e integração com APIs de streaming não fazem parte do escopo básico desta landing page.
+3. **Catálogo Inteligente com Busca e Filtros em Tempo Real**:
+   - Barra de busca instantânea com atalho global `/` (pressione `/` para focar imediatamente na busca).
+   - Filtro por categorias com contadores dinâmicos de títulos disponíveis.
+   - Filtro de pontuação mínima (ex: `★ 8.0+`, `★ 9.0+`).
+   - Ordenação inteligente: *Mais Populares*, *Melhor Avaliados*, *Lançamentos Recentes* e *A-Z*.
+   - Alternador de visualização: Grade de Pôsteres vs. Lista Detalhada Compacta.
 
-## 🖥️ Prévia do projeto
+4. **Gaveta Deslizante "Minha Lista" (Watchlist Drawer)**:
+   - Gaveta lateral animada exibindo todos os filmes favoritados.
+   - Acesso direto ao trailer ou detalhes de cada título.
+   - Remoção individual ou limpeza completa com persistência no navegador.
 
-<div align="center">
+5. **Modal de Detalhes com 4 Abas**:
+   - **Visão Geral**: Sinopse completa, ficha técnica de produção (direção, áudio, resolução, faixa etária).
+   - **Widget Interativo de Avaliação**: O usuário pode votar de 1 a 5 estrelas interativamente e salvar sua nota.
+   - **Elenco & Personagens**: Cartões com avatares dos atores e papéis interpretados.
+   - **Comentários da Comunidade**: Formulário para publicação de novas análises e lista de resenhas.
+   - **Títulos Semelhantes**: Sugestões automáticas baseadas no mesmo gênero.
 
-<!-- Adicione aqui uma captura de tela real da sua aplicação -->
+6. **Sistema de Autenticação & Perfil**:
+   - Abas de "Entrar" e "Criar Conta".
+   - Botão **"Testar com Usuário Demo"** para preenchimento em 1 clique.
+   - Perfil logado exibindo avatar, nome de usuário, selo VIP PRO e menu de configurações/logout.
 
-<img src="assets/banner.png" alt="Banner do MovieCity" width="90%" />
+7. **Notificações Toast Flutuantes**:
+   - Notificações instantâneas com barra de contagem regressiva para ações como salvar na lista, avaliar um filme ou fazer login.
 
-**MovieCity — Uma interface inspirada na experiência do cinema digital.**
+---
 
-</div>
+## ⌨️ Atalhos de Teclado
 
-> Para exibir uma captura de tela real, salve uma imagem da aplicação em `assets/screenshot.png` e substitua o caminho da imagem acima por `assets/screenshot.png`.
+| Tecla | Ação |
+| :---: | :--- |
+| `/` | Foca instantaneamente na barra de busca de filmes |
+| `Esc` | Fecha qualquer modal, gaveta ou player ativo |
 
-## 🎞️ Universo visual
+---
 
-<div align="center">
+## 🚀 Como Executar
 
-<img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="280" alt="Animação cinematográfica" />
+1. Abra a pasta do projeto no VS Code ou terminal:
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Acesse o endereço exibido no terminal (geralmente `http://localhost:5173`).
 
-*Uma experiência visual inspirada no universo dos filmes.*
+---
 
-</div>
-
-## 🛠️ Tecnologias utilizadas
-
-| Tecnologia | Utilização |
-|---|---|
-| ⚛️ React | Construção da interface por componentes |
-| ⚡ Vite | Inicialização e execução do projeto |
-| 🟨 JavaScript | Lógica e interatividade |
-| 🎨 CSS3 | Estilização, efeitos e responsividade |
-| 🧱 HTML5 | Estrutura principal da aplicação |
-| 🐙 Git e GitHub | Versionamento e publicação do código |
-
-## 📂 Estrutura do projeto
+## 📁 Estrutura do Projeto
 
 ```text
 MovieCity/
 ├── public/
 ├── src/
-│   ├── assets/
-│   │   ├── afterlife.jpg
-│   │   ├── transformers.jpg
-│   │   ├── mowgli.jpg
-│   │   ├── shift.png
-│   │   ├── squidgame.webp
-│   │   └── harrypotter.jpg
+│   ├── assets/                 # Pôsteres e capas dos filmes
 │   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Main.jsx
-│   │   └── Home.jsx
+│   │   ├── AuthModal.jsx       # Modal de login/cadastro com preenchimento demo
+│   │   ├── Footer.jsx          # Rodapé com newsletter e stack tecnológica
+│   │   ├── Header.jsx          # Navbar com busca, áudio, lista e perfil
+│   │   ├── HeroBanner.jsx      # Billboard em destaque com carrossel dinâmico
+│   │   ├── Home.jsx            # Orquestrador de estado e layout
+│   │   ├── Icons.jsx           # Ícones SVG nativos e ultraleves
+│   │   ├── MovieCard.jsx       # Cartão do filme com hover 3D e ações
+│   │   ├── MovieDetailsModal.jsx # Modal com abas, elenco e avaliação
+│   │   ├── MovieGrid.jsx       # Catálogo, busca, filtros e ordenação
+│   │   ├── Toast.jsx           # Sistema de notificações flutuantes
+│   │   ├── TrailerPlayerModal.jsx # Player de cinema com backlight
+│   │   └── WatchlistDrawer.jsx # Gaveta lateral da lista de favoritos
+│   ├── data/
+│   │   └── moviesData.js       # Catálogo expandido com metadados e resenhas
+│   ├── utils/
+│   │   ├── audio.js            # Efeitos sonoros via Web Audio API
+│   │   └── storage.js          # Sincronização persistente com LocalStorage
 │   ├── App.jsx
-│   ├── index.css
+│   ├── index.css               # Arquitetura CSS completa e responsiva
 │   └── main.jsx
-├── index.html
+├── index.html                  # Fontes Google, SEO e Favicon SVG
 ├── package.json
-└── README.md
+└── vite.config.js
 ```
 
-*Nota: mantenha a estrutura alinhada aos nomes dos arquivos que realmente existem no seu repositório.*
-
-## 🚀 Como executar o projeto
-
-### 1. Pré-requisitos
-
-Instale previamente:
-
-- [Node.js](https://nodejs.org/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- Git (opcional, para versionamento)
-
-### 2. Clone o repositório
-
-```bash
-git clone https://github.com/CarlosD2008/MovieCity.git
-```
-
-Entre na pasta do projeto:
-
-```bash
-cd MovieCity
-```
-
-> Se o nome do repositório no GitHub for diferente, substitua `MovieCity` pelo nome correto.
-
-### 3. Instale as dependências
-
-```bash
-npm install
-```
-
-### 4. Inicie o servidor de desenvolvimento
-
-```bash
-npm run dev
-```
-
-### 5. Acesse a aplicação
-
-Abra no navegador o endereço informado no terminal. Normalmente:
-
-```text
-http://localhost:5173
-```
-
-### 6. Gere a versão de produção
-
-Para verificar se o projeto compila:
-
-```bash
-npm run build
-```
-
-Para visualizar a versão compilada localmente:
-
-```bash
-npm run preview
-```
-
-## 📱 Responsividade
-
-O projeto deve ser testado em diferentes resoluções:
-
-<div align="center">
-
-| Dispositivo | Objetivo |
-|---|---|
-| 💻 Desktop | Aproveitar o espaço e a composição visual |
-| 📱 Smartphone | Adaptar navegação, textos e cartões |
-| 📲 Tablet | Manter equilíbrio entre conteúdo e layout |
-
-</div>
-
-**Como testar:** abra o site no navegador, pressione `F12` e ative o modo de dispositivos móveis.
-
-## 🧠 Conhecimentos desenvolvidos
-
-Durante o desenvolvimento, são praticados conceitos importantes:
-
-- Criação de aplicações React com Vite.
-- Organização de diretórios e arquivos.
-- Criação e reutilização de componentes.
-- Importação e utilização de imagens.
-- Separação entre estrutura, lógica e estilos.
-- Construção de layouts responsivos.
-- Execução e compilação de aplicações front-end.
-
-## 🗺️ Roadmap de melhorias
-
-- [x] Estrutura inicial da Landing Page.
-- [x] Organização baseada em componentes.
-- [x] Identidade visual temática.
-- [x] Utilização de imagens de filmes.
-- [ ] Publicação da demonstração online.
-- [ ] Implementação de pesquisa de filmes.
-- [ ] Criação de filtros avançados.
-- [ ] Integração futura com uma API de filmes.
-- [ ] Ampliação da acessibilidade e dos testes.
-
-*Os itens concluídos devem refletir o estado real do projeto.*
-
-## 📈 Evolução do projeto
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=CarlosD2008&theme=github-compact&hide_border=true&area=true" alt="Gráfico de atividade do GitHub" width="100%" />
-
-</div>
-
-## 👨‍💻 Desenvolvedor
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=9DFF00&center=true&vCenter=true&width=600&lines=Carlos+Daniel;Desenvolvedor+Full+Stack+em+Forma%C3%A7%C3%A3o;Estudante+de+Desenvolvimento+de+Sistemas" alt="Carlos Daniel" />
-
-Estudante de Desenvolvimento de Sistemas no SENAI, interessado em desenvolvimento web, programação e criação de soluções digitais.
-
-<br />
-
-<a href="https://github.com/CarlosD2008">
-<img src="https://img.shields.io/badge/GitHub-CarlosD2008-181717?style=for-the-badge&logo=github" alt="GitHub" />
-</a>
-
-</div>
-
-## ⭐ Gostou do projeto?
-
-Se o MovieCity chamou sua atenção, deixe uma ⭐ no repositório e acompanhe a evolução dos meus projetos.
-
-<div align="center">
-
-### 🎬 MovieCity
-
-**Tecnologia, criatividade e cinema em uma única experiência.**
-
-*Desenvolvido com dedicação e aprendizado contínuo.*
-
-</div>
+© 2026 MovieCity · Todos os direitos reservados.
