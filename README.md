@@ -206,14 +206,6 @@ Durante o desenvolvimento, são praticados conceitos importantes:
 
 *Os itens concluídos devem refletir o estado real do projeto.*
 
-## 📈 Evolução do projeto
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=CarlosD2008&theme=github-compact&hide_border=true&area=true" alt="Gráfico de atividade do GitHub" width="100%" />
-
-</div>
-
 ## 👨‍💻 Desenvolvedor
 
 <div align="center">
